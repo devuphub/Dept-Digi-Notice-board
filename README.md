@@ -1,4 +1,4 @@
-# Department-wise Digital Notice Board — ABESEC Ghaziabad
+# ABESEC Bulletin — Department-wise Digital Notice Board (ABESEC Ghaziabad)
 
 A clean, full-stack **Department-wise Digital Notice Board** built for **ABESEC Ghaziabad** to streamline official academic, examination, placement, event, and circular announcements across departments.
 

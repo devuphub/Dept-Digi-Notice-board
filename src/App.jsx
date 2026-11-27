@@ -334,7 +334,11 @@ export default function App() {
 
           {/* Main Notice Feed */}
           <section className="feed-column">
-            <div className="dept-banner">
+            <div
+              className="dept-banner"
+              style={{ '--banner-accent': activeDeptInfo.color }}
+            >
+              <div className="banner-glow" aria-hidden="true" />
               <div className="dept-banner-copy">
                 <div className="banner-kicker">
                   <span
@@ -343,7 +347,7 @@ export default function App() {
                   />
                   <span>
                     {selectedDept === 'All'
-                      ? 'Central Notice Feed'
+                      ? 'ABESEC Ghaziabad · Central Notice Feed'
                       : `${activeDeptInfo.code} Department Board`}
                   </span>
                 </div>
@@ -356,7 +360,7 @@ export default function App() {
               <div className="banner-stats">
                 <div className="stat-pill">
                   <span className="stat-num">{notices.length}</span>
-                  <span className="stat-lbl">Showing</span>
+                  <span className="stat-lbl">Notices</span>
                 </div>
                 <div className="stat-pill stat-pin">
                   <Pin size={14} />

@@ -59,7 +59,7 @@ readDb();
 app.get('/api/health', (_req, res) => {
   res.json({
     status: 'ok',
-    service: 'ABESEC Ghaziabad Digital Notice Board',
+    service: 'ABESEC Bulletin — ABESEC Ghaziabad',
     timestamp: new Date().toISOString(),
   });
 });

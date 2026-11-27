@@ -47,12 +47,14 @@ export default function Header({
           <div className="brand-copy">
             <div className="brand-eyebrow">
               <span className="college-name">{INSTITUTE_INFO.collegeName}</span>
+              <span className="eyebrow-sep">·</span>
+              <span className="eyebrow-sub">{INSTITUTE_INFO.appSubtitle}</span>
               <span className="live-pill">
                 <span className="live-dot" />
                 {totalNotices} Live Notices
               </span>
             </div>
-            <h1 className="site-title">{INSTITUTE_INFO.appTitle}</h1>
+            <h1 className="site-title">{INSTITUTE_INFO.portalName}</h1>
           </div>
         </div>
 
@@ -79,22 +81,22 @@ export default function Header({
               </div>
               <button
                 type="button"
-                className="btn btn-ghost"
+                className="btn btn-outline btn-sm"
                 onClick={onLogout}
                 title="Sign out"
               >
-                <LogOut size={16} />
+                <LogOut size={15} />
                 <span className="hide-sm">Sign Out</span>
               </button>
             </div>
           ) : (
             <button
               type="button"
-              className="btn btn-outline"
+              className="btn btn-signin"
               onClick={onOpenLogin}
             >
               <LogIn size={16} />
-              <span>Role Sign In</span>
+              <span>Sign In</span>
             </button>
           )}
         </div>
