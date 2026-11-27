@@ -4,8 +4,9 @@ A clean, full-stack **Department-wise Digital Notice Board** built for **ABESEC 
 
 ## Live Deployment (Render)
 
-- **Deployed URL:** _Pending Render deployment — update after deploying to Render_
-- **Health Check Endpoint:** `/api/health`
+- **Deployed Render URL:** https://dept-digi-notice-board.onrender.com/
+- **Health Check Endpoint:** https://dept-digi-notice-board.onrender.com/api/health
+- **GitHub Repository:** https://github.com/devuphub/Dept-Digi-Notice-board
 
 ---
 
