@@ -67,10 +67,9 @@ npm start
 
 ---
 
-## Team & Mentorship
+## Team
 
-- **Member 1:** Dev Upadhyay
-- **Member 2:** Bhaskar Pandey
-- **Mentor:** Ashish Bajpai Sir
+- **Developed & Maintained By:** Dev Upadhyay, Bhaskar Pandey (B.Tech CSE-15)
+- **Team:** Full Stack Development Team
 - **Institution:** ABESEC Ghaziabad
 - **© 2026 ABESEC Ghaziabad. All Rights Reserved.**
