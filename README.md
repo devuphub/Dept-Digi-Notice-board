@@ -1,75 +1,60 @@
-# ABESEC Bulletin — Department-wise Digital Notice Board (ABESEC Ghaziabad)
+# ABESEC Bulletin (Department-wise Digital Notice Board)
 
-A clean, full-stack **Department-wise Digital Notice Board** built for **ABESEC Ghaziabad** to streamline official academic, examination, placement, event, and circular announcements across departments.
+A full-stack web application built for **ABESEC Ghaziabad** so students and faculty can view and manage department-wise notices in one place instead of checking multiple WhatsApp groups or physical notice boards.
 
-## Live Deployment (Render)
+## Live Links
 
-- **Deployed Render URL:** https://dept-digi-notice-board.onrender.com/
-- **Health Check Endpoint:** https://dept-digi-notice-board.onrender.com/api/health
+- **Live Website (Render):** https://dept-digi-notice-board.onrender.com/
+- **API Health Check:** https://dept-digi-notice-board.onrender.com/api/health
 - **GitHub Repository:** https://github.com/devuphub/Dept-Digi-Notice-board
 
----
+## Login Credentials
 
-## Login Credentials (All Available Roles)
-
-| Role | Scope / Permissions | Username | Password |
-| :--- | :--- | :--- | :--- |
-| **Admin** | Full access across all departments (create, edit, pin, delete notices, add departments) | `admin` | `Admin@123` |
-| **Faculty / Coordinator (CSE)** | Publish, edit, pin, and delete notices for **CSE** and **General** | `faculty_cse` | `Faculty@123` |
-| **Faculty / Coordinator (IT)** | Publish, edit, pin, and delete notices for **IT** and **General** | `faculty_it` | `Faculty@123` |
-| **Faculty / Coordinator (ECE)** | Publish, edit, pin, and delete notices for **ECE** and **General** | `faculty_ece` | `Faculty@123` |
-| **Student (CSE)** | Browse, search, filter, save/bookmark, and acknowledge notices | `student` | `Student@123` |
-| **Student (IT)** | Browse, search, filter, save/bookmark, and acknowledge notices | `student_it` | `Student@123` |
-| **Student (ECE)** | Browse, search, filter, save/bookmark, and acknowledge notices | `student_ece` | `Student@123` |
-
-### Required Summary Credentials
+### Main Admin & Student Login
 - **Admin Username:** `admin`
 - **Admin Password:** `Admin@123`
 - **Student Username:** `student`
 - **Student Password:** `Student@123`
 
----
+### All Available User Roles
 
-## Features
+| Role | Department | Username | Password | What They Can Do |
+| :--- | :--- | :--- | :--- | :--- |
+| Admin | All | `admin` | `Admin@123` | Add/edit/pin/delete notices in any department, upload files, add new departments |
+| Faculty | CSE | `faculty_cse` | `Faculty@123` | Post, edit, pin, and delete notices for CSE and General |
+| Faculty | IT | `faculty_it` | `Faculty@123` | Post, edit, pin, and delete notices for IT and General |
+| Faculty | ECE | `faculty_ece` | `Faculty@123` | Post, edit, pin, and delete notices for ECE and General |
+| Student | CSE | `student` | `Student@123` | View notices, filter by dept/year, bookmark notices, mark notices as read |
+| Student | IT | `student_it` | `Student@123` | View notices, bookmark notices, mark notices as read |
+| Student | ECE | `student_ece` | `Student@123` | View notices, bookmark notices, mark notices as read |
 
-- **Department-wise Channels:** Dedicated notice boards for `General`, `CSE`, `IT`, `ECE`, `EN`, `ME`, and `MCA`, plus Admin ability to add new departments.
-- **Role-Based Access Control:** JWT authentication with `bcryptjs` password hashing for **Admin**, **Faculty / Department Coordinator**, and **Student** roles.
-- **Search & Multi-Filter Toolbar:** Filter notices by Department, Category (`Academic`, `Exam`, `Placement`, `Events`, `Circular`, `Holiday`), Priority (`Urgent`, `Important`, `Normal`), Target Year, Keyword Search, and Saved Bookmarks.
-- **Pinning & Engagement:** Pin urgent notices to the top, track view counts, attach PDF/image circulars (`multer`), bookmark notices, and mark notices as Read / Acknowledged.
-- **Clean Responsive UI:** Built with React + Vite and served seamlessly alongside the Express API on a single port for one-click Render deployment.
+## What the Portal Does
 
----
+- Separates notices by department (`General`, `CSE`, `IT`, `ECE`, `EN`, `ME`, `MCA`) with light color coding on each card.
+- Lets students search by keyword and filter by category (`Academic`, `Exam`, `Placement`, `Events`, `Circular`, `Holiday`), priority (`Urgent`, `Important`, `Normal`), and target year.
+- Allows Admin and Faculty to attach PDF or image circulars (up to 5 MB) and pin important notices to the top.
+- Tracks views, saved bookmarks, and read acknowledgements for logged-in users.
 
 ## Tech Stack
 
-- **Frontend:** React 18, Vite, Lucide Icons, Custom CSS Design System
-- **Backend:** Node.js, Express, JWT (`jsonwebtoken`), `bcryptjs`, `multer`
-- **Deployment:** Render Web Service (`render.yaml` included)
+- **Frontend:** React 18, Vite, Lucide Icons, CSS
+- **Backend:** Node.js, Express
+- **Auth & Uploads:** JWT (`jsonwebtoken`), `bcryptjs`, `multer`
+- **Data Storage:** JSON file storage (`server/data/db.json`) with automatic initial seed data
+- **Hosting:** Render Web Service (`render.yaml`)
 
----
-
-## Local Development
+## Running Locally
 
 ```bash
-# Install dependencies
 npm install
-
-# Run backend API (port 5000)
-npm run dev:server
-
-# Run frontend dev server (port 5173, proxies /api to 5000)
-npm run dev:client
-
-# Production build & start (single server on port 5000)
 npm run build
 npm start
 ```
 
----
+The server starts on `http://localhost:5000` and serves both the API and the React frontend.
 
-## Team
+## Project Team
 
 - **Developed & Maintained By:** Dev Upadhyay, Bhaskar Pandey (B.Tech CSE-15)
 - **Team:** Full Stack Development Team
-- **Institution:** ABESEC Ghaziabad
-- **© 2026 ABESEC Ghaziabad. All Rights Reserved.**
+- © 2026 ABESEC Ghaziabad. All Rights Reserved.
