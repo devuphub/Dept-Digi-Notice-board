@@ -55,6 +55,6 @@ The server starts on `http://localhost:5000` and serves both the API and the Rea
 
 ## Project Team
 
-- **Developed & Maintained By:** Dev Upadhyay, Bhaskar Pandey (B.Tech CSE-15)
+- **Developed & Maintained By:** Dev Prakash Upadhyay, Bhaskar Pandey (B.Tech CSE-15)
 - **Team:** Full Stack Development Team
 - © 2026 ABESEC Ghaziabad. All Rights Reserved.

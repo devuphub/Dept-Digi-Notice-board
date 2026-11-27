@@ -73,7 +73,7 @@ function createSeedData() {
       id: 'u-stu-main',
       username: 'student',
       passwordHash: studentPass,
-      name: 'Dev Upadhyay',
+      name: 'Dev Prakash Upadhyay',
       role: 'student',
       department: 'CSE',
       designation: 'B.Tech Student (CSE)',
